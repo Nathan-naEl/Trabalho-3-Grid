@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .principal {
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: repeat(2, 60px);
+    gap: 10px;
+    
+  }
+  
+  .item{
+        border-radius: 10px;
+  }
+
+  .vermelho {
+    background-color: #ff6b6b;
+  }
+  
+  .azul {
+    background-color: #6bb7ff;
+  }
+  
+  .verde {
+    background-color: #6bff95;
+  }
+  
+  .amarelo {
+    background-color: #ffff6b;
+  }
+  
