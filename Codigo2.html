@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout2</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100vh;
+    }
+
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background-color: #290ccf;
+    }
+
+    .cabeçalho {
+      background-color: #3cb371;
+      height: 30px;
+    }
+
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .corpo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .corpo2 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .cima, .baixo {
+      border-radius: 4px;
+    }
+
+    .cima {
+      height: 290px;
+      background-color: #ff4081;
+    }
+
+    .baixo {
+      height: 290px;
+      background-color: #9c27b0;
+    }
+
+    .rodapé {
+      background-color: #ff5722;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header class="cabeçalho"></header>
+
+  <main class="conteudo">
+    <section class="corpo">
+      <div class="cima"></div>
+      <div class="cima"></div>
+      <div class="cima"></div>
+    </section>
+
+    <section class="corpo2">
+      <div class="baixo"></div>
+      <div class="baixo"></div>
+      <div class="baixo"></div>
+      <div class="baixo"></div>
+      <div class="baixo"></div>
+    </section>
+  </main>
+
+  <footer class="rodapé"></footer>
+</body>
+</html>
