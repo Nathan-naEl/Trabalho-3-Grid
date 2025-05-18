@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sobre {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+      background-color: #f5f5f5;
+    }
+
+    .sobre img {
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .sobre-texto h2 {
+      margin-bottom: 10px;
+    }
+
+    .projetos {
+      padding: 30px;
+      background-color: #e0e0e0;
+    }
+
+    .projetos h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .projeto {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .sobre {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .sobre img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Portfólio</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="sobre">
+    <img src="Minha foto.jpeg" alt="Foto pessoal">
+    <div class="sobre-texto">
+      <h2>Natanael Camargos, DEV Sênior.</h2>
+      <p>Meu portfólio pessoal. Aqui você verá meus projetos de variadas linguagens de programação.</p>
+    </div>
+  </section>
+
+  <section class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="galeria">
+      <div class="projeto">
+        <h3>Projeto 1</h3>
+        <p>Banco de Dados para empressa de suporte técnico.</p>
+      </div>
+      <div class="projeto">
+        <h3>Projeto 2</h3>
+        <p>Aplocativo de controle de gastos pessoais.</p>
+      </div>
+      <div class="projeto">
+        <h3>Projeto 3</h3>
+        <p>Automatização de tarefas administrativas.</p>
+      </div>
+      <div class="projeto">
+        <h3>Projeto 4</h3>
+        <p>Chat para loja.</p>
+      </div>
+      <div class="projeto">
+        <h3>Projeto 5</h3>
+        <p>Afinador de instrumentos musicais.</p>
+      </div>
+      <div class="projeto">
+        <h3>Projeto 6</h3>
+        <p>Scanner automotivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 - MeuPortfólio. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
